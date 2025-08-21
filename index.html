@@ -3,191 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanPuff Bahía - Vapers Premium</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>UrbanPuff</title>
+    <!-- Icon del sitio -->
+    <link rel="shortcut icon" href="./assets/Logo UrbanPuff.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header con navegación -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>Urban<span>Puff</span></h1>
-                <p>Bahía Blanca</p>
+                <h1>UrbanPuff</h1>
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2>Vapea con Estilo</h2>
-            <p>Productos premium y originales en Bahía Blanca</p>
-            <a href="productos.html" class="btn pulse">Ver Colección</a>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>¿Por qué elegirnos?</h2>
-                <p>Calidad y servicio premium para nuestros clientes</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                    <h3>Originales</h3>
-                    <p>Productos 100% originales con garantía</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3>Envíos Rápidos</h3>
-                    <p>Entregamos en toda Bahía Blanca</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Calidad Premium</h3>
-                    <p>Los mejores vapers del mercado</p>
-                </div>
-            </div>
+            <h2 class="hero-title">Vapes Desechables Premium</h2>
+            <p class="hero-subtitle">La mejor experiencia de sabor con la máxima duración</p>
+            <a href="#productos" class="btn">Ver Productos</a>
         </div>
     </section>
 
-    <!-- Productos Destacados -->
-    <section class="featured-products">
+    <!-- Productos Section -->
+    <section class="products" id="productos">
         <div class="container">
-            <div class="section-header">
-                <h2>Productos Destacados</h2>
-                <p>Lo más vendido esta semana</p>
-            </div>
-            <div class="products-grid">
-                <!-- Producto 1 -->
-                <div class="product-card">
-                    <div class="product-badge">Nuevo</div>
-                    <div class="product-image">
-                        <img src="images/producto1.jpg" alt="Vaper Modelo X">
-                    </div>
-                    <div class="product-info">
-                        <h3>Vaper Modelo X</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+            <h2 class="section-title">Nuestros Productos</h2>
+            
+            <!-- IGNITE 15K -->
+            <div class="product-category">
+                <h3 class="category-title">IGNITE 15K PUFF (15,000 puffs)</h3>
+                <p class="category-price">💰 $22,500 c/u</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Cherry Watermelon Ice Ignite.jpg" alt="IGNITE 15K - Cherry Watermelon Ice" class="img-responsive">
                         </div>
-                        <p class="product-price">$12,999</p>
-                        <a href="https://wa.me/549TU_NUMERO?text=Hola%20UrbanPuff!%20Quiero%20comprar%20el%20Vaper%20Modelo%20X" class="btn btn-small">Comprar ahora</a>
-                    </div>
-                </div>
-                
-                <!-- Producto 2 -->
-                <div class="product-card">
-                    <div class="product-badge">Más vendido</div>
-                    <div class="product-image">
-                        <img src="images/producto2.jpg" alt="POD System Pro">
-                    </div>
-                    <div class="product-info">
-                        <h3>POD System Pro</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                        <div class="product-info">
+                            <h4 class="product-name">🍒🍉❄️ Cherry Watermelon Ice</h4>
+                            <p class="product-desc">Combinación refrescante de cereza y sandía con un toque mentolado.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2015K%20-%20Cherry%20Watermelon%20Ice" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
                         </div>
-                        <p class="product-price">$9,499</p>
-                        <a href="https://wa.me/549TU_NUMERO?text=Hola%20UrbanPuff!%20Quiero%20comprar%20el%20POD%20System%20Pro" class="btn btn-small">Comprar ahora</a>
                     </div>
-                </div>
-                
-                <!-- Producto 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/producto3.jpg" alt="Kit Inicial">
-                    </div>
-                    <div class="product-info">
-                        <h3>Kit Inicial</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Berry Blast N.jpg" alt="IGNITE 15K - Berry Blast" class="img-responsive">
                         </div>
-                        <p class="product-price">$7,999</p>
-                        <a href="https://wa.me/549TU_NUMERO?text=Hola%20UrbanPuff!%20Quiero%20comprar%20el%20Kit%20Inicial" class="btn btn-small">Comprar ahora</a>
+                        <div class="product-info">
+                            <h4 class="product-name">🫐🍓 Berry Blast</h4>
+                            <p class="product-desc">Explosión de sabores con arándanos y fresas silvestres.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2015K%20-%20Berry%20Blast" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Pineapple Peach Lemonade.jpg" alt="IGNITE 15K - Pineapple Peach Lemonade" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍍🍑🍋 Pineapple Peach Lemonade</h4>
+                            <p class="product-desc">Mezcla tropical de piña, durazno y limonada refrescante.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2015K%20-%20Pineapple%20Peach%20Lemonade" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Green Apple Peach Kiwi.jpg" alt="IGNITE 15K - Green Apple Peach Kiwi" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍏🥝🍑 Green Apple Peach Kiwi</h4>
+                            <p class="product-desc">Combinación única de manzana verde, durazno y kiwi.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2015K%20-%20Green%20Apple%20Peach%20Kiwi" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="productos.html" class="btn">Ver Todos los Productos</a>
+            
+            <!-- IGNITE 25K -->
+            <div class="product-category">
+                <h3 class="category-title">IGNITE 25K PUFF (25,000 puffs)</h3>
+                <p class="category-price">💰 $26,500 c/u</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Pineapple Kiwi Dragon Fruit 25k.jpg" alt="IGNITE 25K - Pineapple Kiwi Dragon Fruit" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍍🥝🐉 Pineapple Kiwi Dragon Fruit</h4>
+                            <p class="product-desc">Mezcla exótica de piña, kiwi y pitaya para una experiencia tropical.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2025K%20-%20Pineapple%20Kiwi%20Dragon%20Fruit" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Sweet & Sour Pomegranate 25k.jpg" alt="IGNITE 25K - Sweet & Sour Pomegranate" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍒🍊 Sweet & Sour Pomegranate</h4>
+                            <p class="product-desc">Combinación agridulce de granada con un toque cítrico.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2025K%20-%20Sweet%20%26%20Sour%20Pomegranate" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Minty Melon 25k.jpg" alt="IGNITE 25K - Minty Melon" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍈❄️ Minty Melon</h4>
+                            <p class="product-desc">Refrescante sabor a melón con un suave toque mentolado.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2025K%20-%20Minty%20Melon" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Banana Ice 25k.jpg" alt="IGNITE 25K - Banana Ice" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍌❄️ Banana Ice</h4>
+                            <p class="product-desc">Clásico sabor a banana con una refrescante terminación mentolada.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20IGNITE%2025K%20-%20Banana%20Ice" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ELFBAR 40K -->
+            <div class="product-category">
+                <h3 class="category-title">ELFBAR 40K PUFF (40,000 puffs)</h3>
+                <p class="category-price">💰 $29,500 c/u</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Doble apple ice 40k.jpg" alt="ELFBAR 40K - Double Apple Ice" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍎🍏❄️ Double Apple Ice</h4>
+                            <p class="product-desc">Combinación intensa de manzana roja y verde con efecto helado.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20ELFBAR%2040K%20-%20Double%20Apple%20Ice" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Green Apple Ice 40k.jpg" alt="ELFBAR 40K - Green Apple Ice" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍏❄️ Green Apple Ice</h4>
+                            <p class="product-desc">Sabor crujiente de manzana verde con un toque mentolado.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20ELFBAR%2040K%20-%20Green%20Apple%20Ice" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Sour apple ice.jpg" alt="ELFBAR 40K - Sour Apple Ice" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🍏🍋 Sour Apple Ice</h4>
+                            <p class="product-desc">Manzana ácida con un refrescante acabado mentolado.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20ELFBAR%2040K%20-%20Sour%20Apple%20Ice" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Summer Splash 40k.jpg" alt="ELFBAR 40K - Summer Splash" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🌞💦 Summer Splash</h4>
+                            <p class="product-desc">Mezcla refrescante de frutas tropicales que evoca el verano.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20ELFBAR%2040K%20-%20Summer%20Splash" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./assets/Miami Mint 40k.jpg" alt="ELFBAR 40K - Miami Mint" class="img-responsive">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">🌴❄️ Miami Mint</h4>
+                            <p class="product-desc">Sabor mentolado premium inspirado en la brisa de Miami.</p>
+                            <a href="https://wa.me/5492915137488?text=Hola!%20Quisiera%20comprar%20ELFBAR%2040K%20-%20Miami%20Mint" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section class="testimonials">
+    <!-- Contacto Section -->
+    <section class="contact" id="contacto">
         <div class="container">
-            <div class="section-header">
-                <h2>Lo que dicen nuestros clientes</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Excelente atención y productos de primera calidad. Mi vaper favorito sin duda!</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/cliente1.jpg" alt="Cliente satisfecho">
-                        <h4>Juan Pérez</h4>
-                        <p>Cliente frecuente</p>
-                    </div>
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-phone"></i> 291-513-7488/291-402-0582</p>
+                    <p><i class="fas fa-envelope"></i>urbanpuffbahia@gmail.com</p>
+                    <a href="https://wa.me/5492915137488" class="btn-whatsapp-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Los envíos llegan súper rápido y siempre tienen productos nuevos. 100% recomendado.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="images/cliente2.jpg" alt="Cliente satisfecho">
-                        <h4>María Gómez</h4>
-                        <p>Cliente desde 2022</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <div class="container">
-            <h2>¿Listo para mejorar tu experiencia de vapeo?</h2>
-            <p>Contáctanos y te asesoraremos para encontrar el producto perfecto para ti</p>
-            <div class="cta-buttons">
-                <a href="productos.html" class="btn">Ver Productos</a>
-                <a href="contacto.html" class="btn btn-outline">Contactar</a>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
             </div>
         </div>
     </section>
@@ -195,42 +263,27 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>UrbanPuff Bahía</h3>
-                    <p>Tu tienda de vapers premium en Bahía Blanca. Productos originales y de calidad con envíos a toda la ciudad.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Enlaces</h3>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contacto</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Bahía Blanca, BS AS</li>
-                        <li><i class="fas fa-phone"></i> <a href="https://wa.me/549TU_NUMERO">WhatsApp</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:contacto@urbanpuff.com">contacto@urbanpuff.com</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Redes Sociales</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 UrbanPuff Bahía. Todos los derechos reservados.</p>
-            </div>
+            <p>&copy; 2025 UrbanPuff - Vapes Desechables. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // JavaScript para el menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Cerrar menú al hacer clic en un enlace
+            document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }));
+        });
+    </script>
 </body>
 </html>
